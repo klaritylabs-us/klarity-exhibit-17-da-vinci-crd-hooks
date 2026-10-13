@@ -1,0 +1,19 @@
+[package]
+name = "klarity-exhibit-17-da-vinci-crd-hooks"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Da Vinci CRD hook payload checks"
+publish = false
+
+[lib]
+name = "da_vinci_crd"
+path = "src/lib.rs"
+
+[[bin]]
+name = "validate-crd"
+path = "src/bin/validate_crd.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
